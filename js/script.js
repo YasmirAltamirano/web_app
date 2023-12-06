@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("boton_agregar_tarea")
     .addEventListener("click", agregarTarea);
-  document.getElementById("logoff").addEventListener("click", volverBienvenida);
+  document.getElementById("logoff").addEventListener("click", salir);
   document
     .getElementById("logoInfo")
     .addEventListener("click", () => mostrarVista("info"));
@@ -148,7 +148,7 @@ function mostrarTareas() {
   }
 }
 
-function volverBienvenida() {
+function salir() {
   localStorage.clear();
   setTimeout(() => {
     mostrarVista("splashScreen");
