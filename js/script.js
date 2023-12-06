@@ -59,24 +59,6 @@ function ingresarNombre() {
   }
 }
 
-function volverBienvenida() {
-  // Limpiar localStorage y mostrar la vista de bienvenida después de 2 segundos
-  localStorage.clear();
-  setTimeout(() => {
-    mostrarVista("bienvenida");
-    document.getElementById("bienvenida").style.transition =
-      "opacity 2s ease-in-out";
-    document.getElementById("bienvenida").style.opacity = 1;
-    document.getElementById("agenda_tarea").classList.add("oculto");
-    document.getElementById("saludo").classList.add("mensaje_oculto");
-    document.getElementById("i_nombre").classList.remove("mensaje_oculto");
-    document.getElementById("nombreInput").classList.remove("mensaje_oculto");
-    document
-      .getElementById("boton_ingresar")
-      .classList.remove("mensaje_oculto");
-  }, 2000);
-}
-
 function agregarTarea() {
   const ingresoTarea = document.getElementById("ingresoTarea");
 
@@ -164,4 +146,11 @@ function mostrarTareas() {
   } else {
     localStorage.setItem("tareas", "");
   }
+}
+
+function volverBienvenida() {
+  localStorage.clear();
+  setTimeout(() => {
+    mostrarVista("splashScreen");
+  }, 2000);
 }
