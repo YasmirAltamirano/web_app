@@ -7,4 +7,4 @@ Turno: Mañana Virtual
 Apellido y nombre: Altamirano Andrea Yasmir
 Docente: Omar Toyos
 Trabajo Práctico
-URL Web app: 
+URL Web app: https://yasmiraltamirano.github.io/web_app/
