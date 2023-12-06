@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGENDA DE TAREAS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- VISTA SPLASHSCREEN -->
+    <section id="splashScreen" data-vista="splash">
+      <div class="animate__animated animate__fadeIn">
+        <img src="./assets/img/isologotipo.png" alt="Logo" id="logo" />
+      </div>
+    </section>
+
+    <!-- VISTA BIENVENIDA -->
+    <section id="bienvenida" data-vista="inicio">
+      <h1 id="saludo" class="mensaje_oculto">
+        ¡Bienvenido, <span id="nombre"></span>!
+      </h1>
+
+      <div id="icon-loggin">
+        <img src="./assets/img/iconologgin.png" alt="icono Loggin" />
+      </div>
+
+      <h2 id="i_nombre">INGRESA TU NOMBRE</h2>
+
+      <input type="text" id="nombreInput" />
+
+      <button id="boton_ingresar">Entrar</button>
+    </section>
+
+    <!-- VISTA TAREAS -->
+    <section id="agenda_tarea" data-vista="agenda">
+      <nav id="nav-menu">
+        <img src="./assets/img/salir.png" alt="logoff" id="logoff" />
+        <img src="./assets/img/info.png" alt="logo info" id="logoInfo" />
+      </nav>
+      <div id="contenedor-tareas">
+        <h2>AGENDA DE TAREAS</h2>
+        <div id="contenedor-botones-tareas">
+          <input
+            type="text"
+            id="ingresoTarea"
+            placeholder="ingresa una tarea"
+          />
+
+          <button id="boton_agregar_tarea">+</button>
+        </div>
+
+        <ul id="listadoTareas"></ul>
+      </div>
+    </section>
+
+    <!-- VISTA INFO -->
+    <section id="info" data-vista="info">
+      <nav id="nav-menu">
+        <img
+          src="./assets/img/agendaIcon.png"
+          alt="logo agenda"
+          id="logoAgenda"
+        />
+      </nav>
+
+      <div id="contenedor-info">
+        <div id="foto_perfil">
+          <img src="./assets/img/iconologgin.png" alt="icono Loggin" />
+        </div>
+        <h2>CURSADA</h2>
+        <h3>CARRERA:</h3>
+        <p>Diseño Multimedial</p>
+        <h3>MATERIA:</h3>
+        <p>Diseño y Programación Web I</p>
+        <h3>COMISIÓN:</h3>
+        <p>DMM3BV</p>
+        <h3>AÑO:</h3>
+        <p>DMM3BV</p>
+        <h3>APELLIDO Y NOMBRE:</h3>
+        <p>Andrea Yasmir Altamirano</p>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

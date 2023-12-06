@@ -1,0 +1,2 @@
+Nombre de la web app: Check
+Funcionalidad: Es una WebApp destinada a agregar recordatorios, anotaciones o tareas pendientes a realizar, el usuario tiene la posibilidad de cargar las mismas, agregar imágenes y fechas, así tambien completarlas o eliminarlas. 
