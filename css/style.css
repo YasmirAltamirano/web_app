@@ -271,3 +271,8 @@ h2 {
     flex-direction: column;
   }
 }
+
+#foto_perfil img {
+  width: 150px;
+  height: 200px;
+}
